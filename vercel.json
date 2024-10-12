@@ -1,0 +1,51 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "tictactoe.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "style.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "ttt.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "Cow.png",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "Dolphin.png",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "play.png",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "xoxo.mp4",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "30 Onett Theme.mp3",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "i-just-want-to-be-part-of-your-symphony!.mp3",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "README.md",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/tictactoe.html"
+    }
+  ]
+}
