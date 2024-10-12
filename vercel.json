@@ -2,42 +2,26 @@
   "version": 2,
   "builds": [
     {
-      "src": "main game/tictactoe.html",
+      "src": "main game/**",
       "use": "@vercel/static"
     },
     {
-      "src": "startpage/intro.html",
+      "src": "startpage/**",
       "use": "@vercel/static"
     },
     {
-      "src": "main game/ttt.js",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "startpage/intro.js",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "main game/style.css",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "startpage/style.css",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "Wallpaper/*",
+      "src": "Wallpaper/**",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/tictactoe",
-      "dest": "/main game/tictactoe.html"
+      "src": "/",
+      "dest": "/startpage/intro.html"
     },
     {
-      "src": "/intro",
-      "dest": "/startpage/intro.html"
+      "src": "/tictactoe",
+      "dest": "/main game/tictactoe.html"
     },
     {
       "src": "/static/(.*)",
