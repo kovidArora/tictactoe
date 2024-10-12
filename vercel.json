@@ -2,50 +2,46 @@
   "version": 2,
   "builds": [
     {
-      "src": "tictactoe.html",
+      "src": "main game/tictactoe.html",
       "use": "@vercel/static"
     },
     {
-      "src": "style.css",
+      "src": "startpage/intro.html",
       "use": "@vercel/static"
     },
     {
-      "src": "ttt.js",
+      "src": "main game/ttt.js",
       "use": "@vercel/static"
     },
     {
-      "src": "Cow.png",
+      "src": "startpage/intro.js",
       "use": "@vercel/static"
     },
     {
-      "src": "Dolphin.png",
+      "src": "main game/style.css",
       "use": "@vercel/static"
     },
     {
-      "src": "play.png",
+      "src": "startpage/style.css",
       "use": "@vercel/static"
     },
     {
-      "src": "xoxo.mp4",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "30 Onett Theme.mp3",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "i-just-want-to-be-part-of-your-symphony!.mp3",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "README.md",
+      "src": "Wallpaper/*",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/",
-      "dest": "/tictactoe.html"
+      "src": "/tictactoe",
+      "dest": "/main game/tictactoe.html"
+    },
+    {
+      "src": "/intro",
+      "dest": "/startpage/intro.html"
+    },
+    {
+      "src": "/static/(.*)",
+      "dest": "/Wallpaper/$1"
     }
   ]
 }
