@@ -1,10 +1,7 @@
 {
-  "root": "startpage",
-    "rewrites": [
-      {
-        "source": "/",
-        "destination": "/intro.html"
-      }
+ "rewrites": [
+        {"source": "/(.*)", "destination": "/"}
     ]
+    
   }
   
