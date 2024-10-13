@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "main game/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "startpage/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "Wallpaper/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/startpage/intro.html"
+    },
+    {
+      "src": "/tictactoe",
+      "dest": "/main game/tictactoe.html"
+    },
+    {
+      "src": "/static/(.*)",
+      "dest": "/Wallpaper/$1"
+    }
+  ]
+}
