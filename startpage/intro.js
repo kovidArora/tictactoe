@@ -1,3 +1,3 @@
 function startGame() {
-    window.open('main game/tictactoe.html', '_self');
+    window.open('../main game/tictactoe.html', '_self');
 }
