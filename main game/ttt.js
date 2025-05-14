@@ -225,7 +225,6 @@ function confettee(event){
 }
 function checker(event) { 
     confettee(event)
-    endpage("n")
     innerGrid = event.target.id;
     outerGridId = event.target.parentElement;
     innerGridId = document.getElementById(`${innerGrid}`)
